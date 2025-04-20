@@ -1,0 +1,68 @@
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card{
+        border-radius: 20px;
+        padding: 1rem;
+        .timer{
+            display: flex;
+            justify-content: flex-end;
+            padding: 1rem;
+
+            .time{
+                padding: 5px;
+
+            }
+        }
+        .bullets{
+            display: flex;
+            span{
+                width: 15px;
+                height: 15px;
+                background-color: rgb(205, 211, 216);
+                border-radius: 50%;
+                margin: 1rem;
+            }
+         }
+         .answer{
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 10px;
+            background-color: aliceblue;
+            input{
+                margin-right: 10px;
+                }
+         }
+         .question{
+            margin: 20px 0px;
+
+         }
+         .button{
+            display: flex;
+            justify-content: center;
+            button{
+                margin: 20px;
+                width: 30%;
+            }
+         }
+    }
+
+        
+    
+    
+}
+
+.progress-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+  }
+  

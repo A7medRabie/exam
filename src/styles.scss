@@ -1,1 +1,64 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+ :root{
+    --main-color:#4461F2;
+
+}
+body{
+   font-family: "Poppins", sans-serif;
+}
+a{
+   text-decoration-line: none;
+   
+}
+p.formName{
+   font-size: 1.5rem;
+   font-weight: 700;
+}
+input.form-control{
+   background-color: #F9F9F9;
+   margin-top: 30px;
+   box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.1019607843);
+   padding: .75rem;
+
+}
+input.form-control::placeholder{
+   font-size: .75rem;
+   font-weight: 500;
+   color: #A1A4A9;
+}
+input.form-control:focus{
+   box-shadow: none;
+   border: 1px solid var(--main-color);
+
+}
+.pass{
+   position: relative;
+   .password-toggle-icon {
+       position: absolute;
+       top: 50%;
+       right: 10px;
+       transform: translateY(-50%);
+       cursor: pointer;
+       i{
+           color: #A1A4A9;
+       }
+     }
+     
+}
+
+p.login{
+     font-weight: 400;
+     font-size: 1rem;
+     text-align: center;
+   margin-top: 15px;
+   margin-bottom: 40px;
+}
+button.btn{
+   border-radius: 15px;
+   padding: 8px;
+}
+

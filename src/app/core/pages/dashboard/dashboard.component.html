@@ -1,0 +1,9 @@
+<div class="card">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+            @for (subject of getAllSubject; track subject._id) {
+
+            <app-course-card [subject]="subject"></app-course-card>
+            }
+    </div>
+</div>

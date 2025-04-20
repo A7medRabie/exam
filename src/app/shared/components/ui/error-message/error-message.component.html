@@ -1,0 +1,11 @@
+@if (control?.getError("required") && control?.touched ) {
+    <span class="font-medium text-danger">Must be required !</span> 
+}@else if (control?.getError('minlength')) {
+    <span class="font-medium text-danger">Must be more than  2 chars !</span> 
+}@else if (control?.getError("maxlength")) {
+    <span class="font-medium text-danger">Must be less than  20 chars !</span> 
+}@else if (control?.getError('email')){
+    <span class="font-medium text-danger">invalid Email!</span> 
+}@else if (control?.getError('pattern')) {
+    <span class="font-medium text-danger">invalid pattern!</span> 
+}

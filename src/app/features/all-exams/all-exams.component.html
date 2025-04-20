@@ -1,0 +1,9 @@
+         @for (exam of diplomaRes; track $index) {
+        <app-exam-card (sendExamDuration)="receiveExamDuration($event)" [exam]="exam" (fireModal)="receiveModal($event)" (sendExamId)="receiveExamId($event)"  ></app-exam-card>
+        }
+        @empty {
+            <div>There are no exams in this section at the moment.</div>}
+ @if (modal) {          
+<app-modal (fireModal)="closeModal($event)" [examDuration]="examDuration" [examId]="examId" ></app-modal>
+}
+ 

@@ -1,0 +1,32 @@
+<div class="row m-0">
+    <section class="layoutAuth  col-md-6">
+        <div>
+            <h1>Welcome to <br> <span>Elevate</span></h1>
+            <p>Quidem autem voluptatibus qui quaerat aspernatur architecto natus</p>
+            <img src="images/bro.svg" alt="">
+        </div>
+    </section>
+    <section class="signup col-12 col-md-6">
+        <nav> 
+            <select name="lan" id="">
+                <option value="Eng" selected>English</option>
+                <option value="AR">Arabic</option>
+
+            </select>
+            <a href="auth/login" class="fw-bolder">Sign in</a>
+            <a href="auth/register" class="fw-small px-3 py-1 shadow  border border-dark-subtle rounded-4">Register</a>
+
+        </nav>
+        <div class="container pt-4">
+          <router-outlet></router-outlet>
+          <p>Or Continue with</p>
+          <div class="socialIcons">
+            <i class="fa-brands fa-google" style="color: #ee113d;"></i>
+            <i class="fa-brands fa-twitter" style="color: #74C0FC;"></i>
+            <i class="fa-brands fa-facebook" style="color: #271cc4;"></i>
+            <i class="fa-brands fa-apple"></i>
+          </div>
+        </div>
+    </section>
+</div>
+ 

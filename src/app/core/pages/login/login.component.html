@@ -1,0 +1,21 @@
+<p class="formName">Sign in</p>
+<form [formGroup]="loginForm" (ngSubmit)="loginSumbit()"#form>
+     <input type="email"class="form-control" placeholder="enter email" formControlName="email" />
+     <app-error-message [control]="loginForm.get('email')"></app-error-message>
+
+     <div class="pass">
+          <input [type]="!togglePass?'password':'text'"   class="form-control" formControlName="password" placeholder="Confirm Password" />
+              @if (togglePass) {
+                <span (click)="togglePassword()" class="password-toggle-icon"><i class="fa-solid fa-eye-slash"></i></span>
+              }@else {<span (click)="togglePassword()" class="password-toggle-icon"><i class="fa-solid fa-eye"></i></span>
+              }
+     </div>
+     <app-error-message [control]="loginForm.get('password')"></app-error-message>
+
+     
+     <a routerLink="/auth/recoverPassword">Recover password?</a>
+  
+     <button  type="submit"  class="btn btn-primary btn-block mb-4 w-100">Sign in</button>
+  
+    
+</form>
